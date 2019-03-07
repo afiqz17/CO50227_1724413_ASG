@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProteinBar.master.cs" Inherits="Protein_Bars.ProteinBar" %>
+
+<!DOCTYPE html>
+<html>
+
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitlePlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+       
+    </title>
+<link href="~/css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+<div id="page">
+<div id="header">
+    <h1>
+        <asp:ContentPlaceHolder ID="Heading1PlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+       
+    </h1>
+
+</div>
+
+<div id="menu">
+<ul>
+<li><a href="index.aspx">Home</a></li>
+<li><a href="Product.aspx">Products</a></li>
+<li><a href="About.aspx">About</a></li>
+<li><a href="Contact.aspx">Contact Us</a></li>
+
+
+</ul>
+</div>
+
+<div id="content">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    
+
+   
+  
+
+</div>
+</div>
+        </form>
+</body>
+
+</html>
+

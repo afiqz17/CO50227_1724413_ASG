@@ -67,17 +67,60 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Contact.aspx" />
+    <Content Include="css\style.css" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Index.aspx" />
+    <Content Include="Pictures\CakeBiteOpN.jpg" />
+    <Content Include="Pictures\CarbKillaGrenade.jpg" />
+    <Content Include="Pictures\ChocolateDippedCherryOpN.jpg" />
+    <Content Include="Pictures\ChocolateMintOpN.jpg" />
+    <Content Include="Pictures\CombatCrunchMP.jpg" />
+    <Content Include="Pictures\ProteinCrispBSN.jpg" />
+    <Content Include="Pictures\ProteinPlusMETrx.jpg" />
+    <Content Include="Pictures\QuestNF.jpg" />
+    <Content Include="Product.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProteinBar.Master.cs">
+      <DependentUpon>ProteinBar.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProteinBar.Master.designer.cs">
+      <DependentUpon>ProteinBar.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="ProteinBar.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
