@@ -37,7 +37,7 @@ a, a:visited {
 
 #menu ul li {
     list-style-type: none;
-    padding-left: 10px;
+    padding-left: 10px; 
 }
 
 a:hover {
