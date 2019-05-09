@@ -7,27 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Protein_Bars {
+namespace Protein_Bars.Admin {
     
     
-    public partial class Index {
+    public partial class Admin {
         
         /// <summary>
-        /// rptProduct control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptProduct;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// ProductDataSource control.
+        /// ProfuctDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource ProductDataSource;
+        protected global::System.Web.UI.WebControls.SqlDataSource ProfuctDataSource;
     }
 }

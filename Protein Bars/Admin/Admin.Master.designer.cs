@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Protein_Bars {
+namespace Protein_Bars.Admin {
     
     
-    public partial class ProteinBar {
+    public partial class Admin1 {
         
         /// <summary>
         /// TitlePlaceHolder control.
@@ -56,14 +56,5 @@ namespace Protein_Bars {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder;
-        
-        /// <summary>
-        /// MapPlaceHolder control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MapPlaceHolder;
     }
 }

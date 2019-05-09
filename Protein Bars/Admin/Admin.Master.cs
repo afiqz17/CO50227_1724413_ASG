@@ -6,9 +6,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Protein_Bars
+namespace Protein_Bars.Admin
 {
-    public partial class ProteinBar : System.Web.UI.MasterPage
+    public partial class Admin1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

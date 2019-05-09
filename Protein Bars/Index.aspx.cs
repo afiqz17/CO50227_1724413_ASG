@@ -11,7 +11,21 @@ namespace Protein_Bars
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+         
+        }
 
+        protected void rptProduct_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+            {
+                Label lblQuantity = (Label)e.Item.FindControl("lblQuantity");
+                string Quantity = lblQuantity.Text;
+
+                if (Quantity == "0")
+                {
+                    e.Item.Visible = false;
+                }
+            }
         }
     }
 }

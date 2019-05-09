@@ -10,24 +10,33 @@
 namespace Protein_Bars {
     
     
-    public partial class Index {
+    public partial class UploadPictures {
         
         /// <summary>
-        /// rptProduct control.
+        /// LatestImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptProduct;
+        protected global::System.Web.UI.WebControls.Image LatestImage;
         
         /// <summary>
-        /// ProductDataSource control.
+        /// PicturesFileUploadControl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource ProductDataSource;
+        protected global::System.Web.UI.WebControls.FileUpload PicturesFileUploadControl;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

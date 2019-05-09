@@ -20,11 +20,11 @@ namespace Protein_Bars
             //the system will always send mail from the account being used
             //it should never be sent using the address of the person filling in the form
             //this is used a few times, so create a variable
-            const string senderEmail = "izzatemmarul136@gmail.com";
+            const string senderEmail = "AwangMuhammad1105@gmail.com";
 
             //for simple configuration, specify the account password and recipient here also
-            const string accountPassword = "password";
-            const string recipientEmail = "thaqifadi@gmail.com";
+            const string accountPassword = "password@105";
+            const string recipientEmail = "AwangMuhammad1105@gmail.com";
 
             //create a new smtp client (this will connect to the mail server)
             SmtpClient client = new SmtpClient();
@@ -46,8 +46,8 @@ namespace Protein_Bars
             MailMessage msg = new MailMessage(senderEmail, recipientEmail);
 
             //set the subject of the message, and set the body using the text from a text box
-            msg.Subject = "A new email from the website";
-            msg.Body = txtBody.Text;
+            msg.Subject = txtSubject.Text;
+            msg.Body = "From:" + txtEmail.Text + "\n" + "Subject: " + txtSubject.Text + "\n" + "Message:" + txtBody.Text;
 
             //at this stage the body of the email only contains what the user has typed in the message box
             //there's nothing that collects their name and email address (which are required to reply to them)
