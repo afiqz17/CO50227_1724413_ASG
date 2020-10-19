@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProteinBar.master.cs" Inherits="BruFitness.ProteinBar" %>
+
+<!DOCTYPE html>
+<html>
+
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitlePlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+       
+    </title>
+<link href="~/css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <style>
+        #map{
+             height: 45%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+        }
+
+        html, body{
+            height: 100%;
+    margin: 0;
+    padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+<form runat="server">    
+
+<div id="header">
+    <h1>
+        <asp:ContentPlaceHolder ID="Heading1PlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+       
+    </h1>
+
+</div>
+
+
+  <ul>
+  
+  <li><a href="Index.aspx">Home</a></li>
+  <li><a href="Contact.aspx">Contact</a></li>
+  <li><a href="Register.aspx">Login</a></li>
+      <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="" OnLoggingOut="LoginStatus1_LoggingOut" />
+      <asp:LoginName ID="LoginName1" runat="server" />
+</ul> 
+    <br />
+
+<div id="content">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    
+
+   
+  
+
+</div>
+
+     <br />
+    
+    <asp:ContentPlaceHolder ID="MapPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+      
+</body>
+
+   
+</html>
+
+<br />
+
+ <footer style="background-color: #FFFFFF">
+     <asp:hyperlink runat="server" NavigateUrl="~/Admin/Admin.aspx">Admin</asp:hyperlink>
+     <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+            
+
+    </footer>
+</form>
+
+     
